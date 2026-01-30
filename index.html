@@ -16,41 +16,27 @@
             srcset="">
         <p class="lead">Eu sou a Laura</p>
         <h1>Eu estudo Programação</h1>
-        <p>Sou estudante do AGA, e com grande entusiasmo tenho aulas toda semana de programação com o dedicado Dr. Anne. Atualmente, trilhando meu caminho na área de exatas, possuo uma base sólida em HTML, CSS, Scratch 
-            e JavaScript, e estou ansioso para explorar novas fronteiras e aplicar minhas habilidades na resolução 
-            de problemas complexos e na criação de soluções inovadoras.
+        <p>Estudante de Ciência da Computação, interessada em desenvolvimento de sistemas e análise de dados.
+Busco aprender na prática e evoluir a cada projeto.
         </p>
         <p>Minhas habilidades:</p>
         <div>
             <p class="badge bg-secondary">Básico de HTML</p>
             <p class="badge bg-secondary">Básico de CSS</p>
-            <p class="badge bg-secondary">Básico de JavaScript</p>
-            <p class="badge bg-secondary">Básico de Scratch</p>
+            <p class="badge bg-secondary">Básico de Python</p>
         </div>
     </header>
     <main class="container mt-5">
         <h2>Meus projetos:</h2>
         <div class="row">
             <!-- Projeto 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/img java.png" class="card-img-top" alt="Imagem do Java onde foi feito o primeiro projeto">
-                    <div class="card-body">
-                        <h5 class="card-title">Corrida maluca</h5>
-                        <p class="card-text">Este projeto foi feito durante uma aula na escola, onde produzimos
-                            uma corrida no site p5.js editor.
-                        </p>
-                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
-                            o projeto</button>
-                    </div>
-                </div>
-            </div>
+           
             <!-- Projeto 2 -->
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/img vs.jpg" width="200" height="200" class="card-img-top" alt="Imagem do projeto feito pelo vscode">
                     <div class="card-body">
-                        <h5 class="card-title">Futebolizando</h5>
+                        <h5 class="card-title">Quiz-Futebol</h5>
                         <p class="card-text">Este projeto é um jogo de perguntas e respostas, que aprendemos montar no Vscode.</p>
                         <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
                             o projeto</button>
@@ -63,8 +49,7 @@
                 <div class="card">
                     <img src="img/vs3.jpg" width="200" height="200" class="card-img-top" alt="Imagem do projeto feito pelo Vscode">
                     <div class="card-body">
-                        <h5 class="card-title">Alura-Plus
-                        </h5>
+                        <h5 class="card-title">Minuti-dev</h5>
                         <p class="card-text">Neste projeto aprendemos na escola a criar um site de vendas pelo Vscode com o Alura.
                         </p>
                         <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
@@ -75,91 +60,49 @@
         </div>
     </main>
 
+
     <!-- Modal 1 -->
-    <div class="modal" id="modal1" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Corrida maluca</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Em p5.js, podemos criar projetos visuais interativos, como uma visualização de dados climáticos. A ideia 
-                     seria usar dados de temperatura, umidade e vento de diversas cidades para gerar 
-                     círculos dinâmicos na tela. O tamanho, a cor e a direção de elementos visuais 
-                     representariam essas informações. A interação do usuário, como passar o mouse ou 
-                     clicar, poderia revelar detalhes adicionais ou gráficos históricos.
-                    </p>
-                    <p>O código em p5.js se estrutura principalmente em duas funções: setup(), que roda uma vez para 
-                        configurações iniciais (como criar a tela e carregar dados), e draw(), que executa em 
-                        loop para desenhar as formas na tela com base nos dados. Para a interatividade, funções 
-                        como mousePressed() e mouseMoved(), juntamente com as coordenadas do mouse (mouseX, mouseY), permitiriam 
-                        criar respostas dinâmicas às ações do usuário. Um projeto completo exigiria mais código para o 
-                        tratamento de dados e a criação de uma interface visual clara. O p5.js editor oferece um ambiente 
-                        prático para desenvolver e testar essas ideias diretamente no navegador.</p>
-                
-                    <img src="img/p5.jpg" class="img-fluid w-100"
-                        alt="Imagem representativa do p5.js">
-                </div>
-                <div class="modal-footer">
-                    <a href="https://editor.p5js.org/00001113055790sp/full/FliBMbpNs">Ver projeto ao vivo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 2 -->
     <div class="modal" id="modal2" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Futebolizando</h5>
+                    <h5 class="modal-title">Quiz-Futebol</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Estrutura do Projeto: No VS Code, você organizaria seu projeto em pastas e arquivos. Isso poderia incluir 
-                        um arquivo principal sketch.js para o código p5.js, um arquivo index.html para a estrutura da página web 
-                        que exibirá o sketch, e potencialmente pastas para arquivos de dados, bibliotecas 
-                        adicionais ou assets (imagens, sons).
-                    <p>Arquivo index.html: Este arquivo HTML seria a base da sua página web, importando a biblioteca p5.js e o 
-                        seu arquivo sketch.js.</p>
-                    <p>Arquivo sketch.js: Este arquivo conteria o código p5.js, similar ao que seria escrito no editor online, com 
-                        as funções setup(), draw(), e as funções de interação.</p>
+                    <p>O Quiz de Futebol é um projeto desenvolvido com o objetivo de praticar HTML e CSS, explorando a criação de páginas estruturadas e a estilização de elementos visuais. O projeto apresenta um quiz com temática de futebol, organizado de forma simples e intuitiva, e faz parte do meu processo de aprendizado em desenvolvimento web. O site poderá receber melhorias futuras, como ajustes de layout, novas perguntas e aprimoramentos na experiência do usuário, acompanhando minha evolução na área.</p>
+                    
 
                     <img src="img/vs2.jpg" class="img-fluid w-100"
                         alt="Imagem representativa do projeto futebolizando">
                 </div>
                 <div class="modal-footer">
-                    <a href="https://lauraminuti77.github.io/futebolizando/">Ver projeto ao
+                    <a href="https://lauraminuti77.github.io/Quiz-Futebol/">Ver projeto ao
                         vivo</a>
-                    <a href="https://github.com/LauraMinuti77/futebolizando">Ver código do
+                    <a href="https://github.com/LauraMinuti77/Quiz-Futebol">Ver código do
                         projeto</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 -->
+    <!-- Modal 2 -->
     <div class="modal" id="modal3" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Alura-Plus</h5>
+                    <h5 class="modal-title">Minuti-dev</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Estrutura do Projeto: No VS Code, você organizaria seu projeto em pastas e arquivos. Isso poderia incluir 
-                        um arquivo principal sketch.js para o código p5.js, um arquivo index.html para a estrutura da página web 
-                        que exibirá o sketch, e potencialmente pastas para arquivos de dados, bibliotecas 
-                        adicionais ou assets (imagens, sons).</p>
-                    <p>Arquivo index.html: Este arquivo HTML seria a base da sua página web, importando a biblioteca p5.js e o 
-                        seu arquivo sketch.js.</p>
-                    <p>Arquivo sketch.js: Este arquivo conteria o código p5.js, similar ao que seria escrito no editor online, com 
-                        as funções setup(), draw(), e as funções de interação.</p>
+                    <p>O Minuti-dev é um site pessoal em desenvolvimento, criado com o objetivo de praticar e consolidar conhecimentos em HTML e CSS, além de versionamento de código com GitHub e publicação utilizando GitHub Pages.
+                        O projeto faz parte do meu processo de aprendizado em desenvolvimento web e será continuamente aprimorado, tanto em layout quanto em estrutura e conteúdo, acompanhando minha evolução na área de tecnologia.</p>
+                    
                     <img src="img/vs2.jpg" alt="Projeto 3" class="img-fluid w-100">
                 </div>
                 <div class="modal-footer">
-                    <a href=" https://lauraminuti77.github.io/Alura-Plus/">Ver projeto ao vivo</a>
-                    <a href="https://github.com/LauraMinuti77/Alura-Plus">Ver código do projeto</a>
+                    <a href="https://lauraminuti77.github.io/Minuti-dev/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/LauraMinuti77/Minuti-dev">Ver código do projeto</a>
                 </div>
             </div>
         </div>
